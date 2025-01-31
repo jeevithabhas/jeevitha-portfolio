@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 import resumeFile from "../assets/Jeevitha B Resume-Full Stack.pdf"; // Resume file
 import Typewriter from "typewriter-effect"; // Import Typewriter Effect
 
@@ -24,13 +24,13 @@ const Home = () => {
   return (
     <section
       name="home"
-      className="h-screen w-full flex flex-col justify-between items-center text-white py-8"
+      className="min-h-screen w-full flex flex-col justify-between items-center text-white"
       style={{
         background: "linear-gradient(to top, #537895 0%, #09203f 100%)",
       }}
     >
       {/* Main Content */}
-      <div className="flex flex-col items-center justify-center px-4 mt-16 md:mt-0 md:flex-row max-w-screen-lg w-full flex-grow">
+      <div className="flex flex-col items-center justify-center px-4 mt-20 md:mt-0 md:flex-row max-w-screen-lg w-full flex-grow">
         {/* Left Content (Text + Buttons) */}
         <div className="flex flex-col justify-center text-center md:text-left">
           <h2 className="text-3xl sm:text-6xl font-bold">
@@ -62,6 +62,26 @@ const Home = () => {
             >
               Download Resume
               <FaDownload size={25} className="ml-3" />
+            </a>
+          </div>
+
+          {/* Social Icons for Small Screens */}
+          <div className="flex gap-6 justify-center mt-4 sm:hidden">
+            <a
+              href="https://github.com/jeevithabhas"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-3xl hover:text-gray-400 transition-transform duration-300"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jeevitha-bhaskar-1316002b7/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-3xl hover:text-blue-400 transition-transform duration-300"
+            >
+              <FaLinkedin />
             </a>
           </div>
         </div>
