@@ -11,8 +11,8 @@ const skillImages = {
   express: "/images/express.webp",
   sql: "/images/sql.png",
   mongodb: "/images/mongodb.webp",
-  postman: "/images/postman.svg",
   github: "/images/github.png",
+  postman: "/images/postman.svg",
   netlify: "/images/netlify.webp",
   render: "/images/render.jpg",
 };
