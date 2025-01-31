@@ -80,7 +80,7 @@ const Home = () => {
       </div>
 
       {/* Scroll Down Video */}
-      <div className="flex justify-center w-full mt-2 sm:mt-0 mb-2 sm:mb-8">
+      <div className="flex justify-center w-full mt-2 sm:mt-0 mb-6 sm:mb-12">
         <video
           src="/images/scroll.webm"
           autoPlay
