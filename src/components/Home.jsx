@@ -79,8 +79,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Scroll Down Video */}
-      <div className="flex justify-center w-full mt-4 sm:mt-2 mb-4 sm:mb-4 md:mt-4">
+      {/* Scroll Down Video Button Fixed at the Bottom */}
+      <div className="fixed bottom-4 w-full flex justify-center mb-4">
         <video
           src="/images/scroll.webm"
           autoPlay
