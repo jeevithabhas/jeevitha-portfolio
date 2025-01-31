@@ -24,16 +24,16 @@ const Home = () => {
   return (
     <section
       name="home"
-      className="min-h-screen w-full flex flex-col justify-between items-center text-white"
+      className="min-h-screen w-full flex flex-col justify-center items-center text-white"
       style={{
         background: "linear-gradient(to top, #537895 0%, #09203f 100%)",
       }}
     >
       {/* Main Content */}
-      <div className="flex flex-col items-center justify-center px-4 mt-20 md:mt-0 md:flex-row max-w-screen-lg w-full flex-grow">
+      <div className="flex flex-col items-center justify-center px-4 mt-12 sm:mt-16 md:mt-0 md:flex-row max-w-screen-lg w-full flex-grow">
         {/* Left Content (Text + Buttons) */}
-        <div className="flex flex-col justify-center text-center md:text-left">
-          <h2 className="text-3xl sm:text-6xl font-bold">
+        <div className="flex flex-col justify-center text-center md:text-left space-y-4">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold">
             I'm{" "}
             <span className="text-black">
               <Typewriter
@@ -71,7 +71,7 @@ const Home = () => {
           <video
             src="/images/programmer.mp4"
             alt="Profile"
-            className="rounded-full w-1/2 md:w-64 shadow-lg"
+            className="rounded-full w-3/4 sm:w-2/3 md:w-64 shadow-lg"
             autoPlay
             loop
             muted
@@ -87,7 +87,7 @@ const Home = () => {
           loop
           muted
           onClick={handleScrollDown}
-          className="relative cursor-pointer transition-all duration-500 w-16 h-16 sm:w-20 sm:h-20 md:w-22 md:h-22 hover:scale-110"
+          className="relative cursor-pointer transition-all duration-500 w-12 h-12 sm:w-16 sm:h-16 md:w-22 md:h-22 hover:scale-110"
         />
       </div>
     </section>
