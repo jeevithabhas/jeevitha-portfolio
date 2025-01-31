@@ -96,7 +96,8 @@ const Works = () => {
                     <span className="text-lg sm:text-2xl font-bold block text-cyan-600">
                       {projectKey.replace(/([A-Z])/g, " $1").toUpperCase()}
                     </span>
-                    <p className="pt-2 text-xs sm:text-sm md:text-lg">
+                    {/* Description adjusted for smaller screens */}
+                    <p className="pt-2 text-xs sm:text-sm md:text-lg truncate">
                       {description}
                     </p>
                     <p className="pt-2 italic text-xs sm:text-sm text-emerald-300">
