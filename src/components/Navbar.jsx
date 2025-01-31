@@ -53,12 +53,6 @@ const Navbar = () => {
           transition={{ duration: 0.3 }}
           className="absolute top-0 left-0 w-full h-screen bg-black/70 backdrop-blur-md flex flex-col justify-center items-center"
         >
-          <button
-            onClick={handleClick}
-            className="absolute top-6 right-6 text-white text-3xl"
-          >
-            <FaTimes />
-          </button>
           <ul className="text-white text-2xl space-y-6">
             {["home", "about", "skills", "work", "contact"].map((item) => (
               <li

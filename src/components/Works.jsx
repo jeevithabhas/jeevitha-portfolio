@@ -74,7 +74,7 @@ const Works = () => {
           </p>
         </div>
         {/* Responsive Grid Layout */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {Object.keys(projectImages).map((projectKey) => {
             const project = projectImages[projectKey];
             const { description, techStack, liveLink, codeLink } =
@@ -96,8 +96,7 @@ const Works = () => {
                     <span className="text-lg sm:text-2xl font-bold block text-cyan-600">
                       {projectKey.replace(/([A-Z])/g, " $1").toUpperCase()}
                     </span>
-                    {/* Description adjusted for smaller screens */}
-                    <p className="pt-2 text-xs sm:text-sm md:text-lg truncate">
+                    <p className="pt-2 text-xs sm:text-sm md:text-lg">
                       {description}
                     </p>
                     <p className="pt-2 italic text-xs sm:text-sm text-emerald-300">

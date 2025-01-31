@@ -80,14 +80,14 @@ const Home = () => {
       </div>
 
       {/* Scroll Down Video */}
-      <div className="flex justify-center w-full mb-4 sm:mb-8">
+      <div className="flex justify-center w-full mt-4 mb-4 sm:mt-2 sm:mb-2 md:mt-2">
         <video
           src="/images/scroll.webm"
           autoPlay
           loop
           muted
           onClick={handleScrollDown}
-          className="cursor-pointer transition-all duration-500 w-12 h-12 md:w-22 md:h-22 hover:scale-110 sm:mt-4 md:mt-0"
+          className="relative cursor-pointer transition-all duration-500 w-12 h-12 sm:w-16 sm:h-16 md:w-22 md:h-22 hover:scale-110"
         />
       </div>
     </section>
