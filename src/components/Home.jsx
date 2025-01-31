@@ -54,7 +54,7 @@ const Home = () => {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col md:flex-row gap-4 mt-4 justify-center md:justify-start">
+          <div className="flex flex-col md:flex-row gap-4 mt-4 justify-center md:justify-start relative">
             <a
               href={resumeFile}
               download="Jeevitha_Bhaskar_Resume.pdf"
@@ -63,26 +63,26 @@ const Home = () => {
               Download Resume
               <FaDownload size={25} className="ml-3" />
             </a>
-          </div>
 
-          {/* Social Icons for Small Screens */}
-          <div className="flex gap-6 justify-center mt-4 sm:hidden">
-            <a
-              href="https://github.com/jeevithabhas"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white text-3xl hover:text-gray-400 transition-transform duration-300"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/jeevitha-bhaskar-1316002b7/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white text-3xl hover:text-blue-400 transition-transform duration-300"
-            >
-              <FaLinkedin />
-            </a>
+            {/* Social Icons (Visible only on small screens) */}
+            <div className="flex sm:hidden gap-4 absolute top-0 right-0">
+              <a
+                href="https://github.com/jeevithabhas"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-gray-300 transition-transform duration-300"
+              >
+                <FaGithub size={28} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jeevitha-bhaskar-1316002b7/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-blue-300 transition-transform duration-300"
+              >
+                <FaLinkedin size={28} />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -99,8 +99,8 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Scroll Down Video */}
-      <div className="flex justify-center w-full mt-2 sm:mt-0 mb-6 sm:mb-12">
+      {/* Scroll Down Video (Adjusted Position) */}
+      <div className="flex justify-center w-full mt-2 sm:-mt-8 mb-6 sm:mb-12">
         <video
           src="/images/scroll.webm"
           autoPlay
