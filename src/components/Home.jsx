@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaDownload } from "react-icons/fa";
-import resumeFile from "../assets/Jeevitha.B Resume.pdf"; // Resume file
+import resumeFile from "../assets/Jeevitha B Resume-Full Stack.pdf"; // Resume file
 import Typewriter from "typewriter-effect"; // Import Typewriter Effect
 
 const Home = () => {
