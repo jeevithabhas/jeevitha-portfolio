@@ -6,9 +6,6 @@ Welcome to my personal portfolio! This repository showcases my skills, projects,
 
 - [About Me](#about-me)
 - [Skills](#skills)
-- [Works](#projects)
-- [Technologies Used](#technologies-used)
-- [Contact](#contact)
 
 ## About Me
 
