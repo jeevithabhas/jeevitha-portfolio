@@ -80,6 +80,8 @@ const Navbar = () => {
           <li className="w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-600 group hover:bg-gray-800">
             <a
               href="https://github.com/jeevithabhas"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex justify-between items-center w-full text-gray-300 px-4 group-hover:text-white transition-all duration-300"
             >
               GitHub <FaGithub size={30} />
@@ -88,6 +90,8 @@ const Navbar = () => {
           <li className="w-40 h-14 flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 group hover:bg-blue-800">
             <a
               href="https://www.linkedin.com/in/jeevitha-bhaskar-1316002b7/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex justify-between items-center w-full text-gray-300 px-4 group-hover:text-white transition-all duration-300"
             >
               LinkedIn <FaLinkedin size={30} />

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FaDownload } from "react-icons/fa";
-import resumeFile from "../assets/Jeevitha B Resume-Full Stack.pdf"; // Resume file
+import { FaFilePdf } from "react-icons/fa"; // PDF file icon
+import resumeFile from "../assets/Jeevitha B Resume - Full Stack.pdf"; // Resume file
 import Typewriter from "typewriter-effect"; // Import Typewriter Effect
 
 const Home = () => {
@@ -55,13 +55,15 @@ const Home = () => {
 
           {/* Buttons */}
           <div className="flex flex-col md:flex-row gap-4 mt-4 justify-center md:justify-start">
+            {/* View Resume - opens in new tab */}
             <a
               href={resumeFile}
-              download="Jeevitha_Bhaskar_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group text-white w-fit px-6 py-3 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer hover:scale-105 transition-transform duration-300 shadow-lg"
             >
-              Download Resume
-              <FaDownload size={25} className="ml-3" />
+              View Resume
+              <FaFilePdf size={25} className="ml-3" /> {/* PDF file icon */}
             </a>
           </div>
         </div>
