@@ -8,7 +8,6 @@ const Contact = () => {
       className="w-full bg-gradient-to-r from-blue-900 via-midnight-800 to-black text-gray-200 flex flex-col justify-center items-center p-6 relative"
     >
       <div className="flex flex-col max-w-4xl w-full mb-32">
-        {" "}
         {/* Added margin-bottom to prevent overlap */}
         {/* Contact Section Header */}
         <div className="pb-8 flex flex-col justify-center w-full h-full items-center animate__animated animate__fadeIn animate__delay-1s mt-20 sm:mt-0">
@@ -58,30 +57,21 @@ const Contact = () => {
               linkedin.com/in/jeevitha-bhaskar-1316002b7/
             </a>
           </div>
+
+          {/* Contact Card - GitHub (Centered on Large Screens) */}
+          <div className="glass-card lg:col-span-1 lg:col-start-2">
+            <FaGithub className="icon" />
+            <h3 className="text-xl font-semibold mb-2">GitHub</h3>
+            <a
+              href="https://github.com/jeevithabhas"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg text-gray-300 hover:text-cyan-400 transition duration-300"
+            >
+              github.com/jeevithabhas
+            </a>
+          </div>
         </div>
-      </div>
-
-      {/* Floating Social Buttons (Only for Small Screens) */}
-      <div className="fixed top-1/3 left-4 sm:left-6 flex flex-col space-y-3 sm:space-y-6 sm:hidden">
-        {/* GitHub Floating Button */}
-        <a
-          href="https://github.com/jeevithabhas"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="floating-button bg-gray-800 hover:bg-gray-700"
-        >
-          <FaGithub className="text-white text-2xl sm:text-3xl" />
-        </a>
-
-        {/* LinkedIn Floating Button */}
-        <a
-          href="https://www.linkedin.com/in/jeevitha-bhaskar-1316002b7/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="floating-button bg-blue-700 hover:bg-blue-600"
-        >
-          <FaLinkedin className="text-white text-2xl sm:text-3xl" />
-        </a>
       </div>
 
       {/* Footer */}
@@ -119,21 +109,6 @@ const Contact = () => {
 
         .glass-card:hover .icon {
           color: #fff;
-        }
-
-        .floating-button {
-          width: 40px; /* Smaller size */
-          height: 40px; /* Smaller size */
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 50%;
-          transition: all 0.3s ease-in-out;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
-
-        .floating-button:hover {
-          transform: scale(1.1);
         }
       `}</style>
     </div>
