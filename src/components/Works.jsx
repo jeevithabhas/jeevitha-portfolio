@@ -6,21 +6,16 @@ const projectImages = {
   incomeExpensesCalculator: "/images/Income.jpg",
   movieSearchingApp: "/images/Movie.jpg",
   collegePlacementManagementSystem: "/images/Clg.jpg",
-  landingPage: "/images/landing.png", // New project image
+  landingPage: "/images/landing.png",
+  todoApp: "/images/todo.avif",
+  recipeApp: "/images/recipe.avif",
 };
 
 const projectDetails = {
   passwordResetApp: {
     description:
       "A password reset application that allows users to securely reset their forgotten passwords via email with a verification link.",
-    techStack: [
-      "React.js",
-      "Bootstrap",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "JWT",
-    ],
+    techStack: ["React.js", "Bootstrap", "Node.js", "Express", "MongoDB", "JWT"],
     liveLink: "https://pwresetapp.netlify.app/",
     codeLink: "https://github.com/jeevithabhas/PW-Reset_Flow",
   },
@@ -41,14 +36,7 @@ const projectDetails = {
   collegePlacementManagementSystem: {
     description:
       "A management system for college placements, where students can apply for jobs, and placement officers can track applications and interviews.",
-    techStack: [
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "EJS",
-      "React",
-      "Tailwind CSS",
-    ],
+    techStack: ["Node.js", "Express.js", "MongoDB", "EJS", "React", "Tailwind CSS"],
     liveLink: "https://collegeplacementsys.netlify.app/",
     codeLink: "https://github.com/jeevithabhas/college-project",
   },
@@ -58,6 +46,20 @@ const projectDetails = {
     techStack: ["HTML", "Tailwind CSS", "Figma"],
     liveLink: "https://jeevithabhas.netlify.app/",
     codeLink: "https://github.com/jeevithabhas/landing-page-2",
+  },
+  todoApp: {
+    description:
+      "A full-stack To-Do application with user authentication, task management, and real-time updates using RESTful APIs.",
+    techStack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    liveLink: "https://todoappjb.netlify.app/",
+    codeLink: "https://github.com/jeevithabhas/TODO-App.git",
+  },
+  recipeApp: {
+    description:
+      "The Recipe Management App lets users search, view, and save recipes with detailed instructions, ingredients, and health values. Users can also add recipes to favorites for easy access.",
+    techStack: ["Node.js", "Express.js", "MongoDB", "React"],
+    liveLink: "https://recipefa.netlify.app/",
+    codeLink: "https://github.com/jeevithabhas/Food-project",
   },
 };
 
@@ -77,8 +79,7 @@ const Works = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {Object.keys(projectImages).map((projectKey) => {
             const project = projectImages[projectKey];
-            const { description, techStack, liveLink, codeLink } =
-              projectDetails[projectKey];
+            const { description, techStack, liveLink, codeLink } = projectDetails[projectKey];
 
             return (
               <div
@@ -105,12 +106,16 @@ const Works = () => {
                     <div className="pt-4">
                       <a
                         href={liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-block text-xs sm:text-lg px-4 py-2 sm:px-6 sm:py-3 m-2 bg-white text-gray-700 font-semibold rounded-lg hover:bg-cyan-500 hover:text-white transition duration-300"
                       >
                         Live <FaLink className="ml-2 inline" />
                       </a>
                       <a
                         href={codeLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-block text-xs sm:text-lg px-4 py-2 sm:px-6 sm:py-3 m-2 bg-white text-gray-700 font-semibold rounded-lg hover:bg-cyan-500 hover:text-white transition duration-300"
                       >
                         Code <FaLink className="ml-2 inline" />
