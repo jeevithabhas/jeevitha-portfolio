@@ -31,10 +31,7 @@ const About = () => {
           </p>
           <br />
           <p className="text-xl">
-            With a Bachelor’s degree in Science (2024) from Dr. MGR Educational
-            and Research Institute and a Full Stack Development certification
-            from GUVI (2024), I’m equipped with the skills to design and develop
-            scalable, user-focused applications.
+          With a Bachelor's degree in Science (2024) from Dr. MGR Educational and Research Institute, an MBA in Systems Management (2025-2026, currently pursuing) from the University of Madras - Institute of Distance Education, and a Full Stack Development certification from GUVI (2024), I’m equipped with the skills to design and develop scalable, user-focused applications.
           </p>
           <div className="flex justify-center mt-8">
             <FaHtml5 className="text-4xl m-4 text-cyan-500" />

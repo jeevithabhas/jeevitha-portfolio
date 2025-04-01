@@ -49,7 +49,7 @@ const Contact = () => {
             <FaLinkedin className="icon" />
             <h3 className="text-xl font-semibold mb-2">LinkedIn</h3>
             <a
-              href="https://www.linkedin.com/in/jeevitha-bhaskar-1316002b7/"
+              href="https://www.linkedin.com/in/jeevitha-bhaskar-01b852354/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg text-gray-300 hover:text-cyan-400 transition duration-300"
